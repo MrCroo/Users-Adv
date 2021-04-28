@@ -48,9 +48,10 @@
             <?php
             $userObj = new View();
             $users = $userObj->showAllUsers();
+            $index = 1;
 
             foreach($users as $user) {
-                echo '<tr><th>'.$user['id'].'</th>'.'<td>'.$user['name'].'</td></tr>';
+                echo '<tr><th>'.$index++.'</th>'.'<td>'.$user['name'].'</td></tr>';
             }
             ?>
           </tbody>
