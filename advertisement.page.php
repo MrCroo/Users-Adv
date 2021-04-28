@@ -48,10 +48,11 @@
         <?php
         $advObj = new View();
         $advs = $advObj->showAllAdvs(); 
+        $index = 1;
 
             foreach($advs as $adv) {
                 $oneUser = $advObj->showUser($adv['user_id']);
-                echo '<tr><th>'.$adv['id'].'</th>'.'<td>'.$oneUser['name'].'</td>'.'<td>'.$adv['title'].'</td></tr>';
+                echo '<tr><th>'.$index++.'</th>'.'<td>'.$oneUser['name'].'</td>'.'<td>'.$adv['title'].'</td></tr>';
             }
         ?>
     </tbody>
