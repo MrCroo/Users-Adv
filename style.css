@@ -1,7 +1,5 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
   height: 100%;
   width: 100%;
   background-color: lightsteelblue;
@@ -13,15 +11,30 @@ body {
   justify-content: center;
   height: 100%;
   width: 100%;
-  background-color: lightsteelblue;
 }
 
 .listPage {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
-  background-color: lightsteelblue;
+  height: 100%;
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  border-radius: 0.7em;
+}
+
+.format {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  border-radius: 0.7em;
 }
 
 .margin {
@@ -35,17 +48,4 @@ body {
 
 .addButton {
   border: 1px solid grey;
-}
-
-.inputGroup {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  width: 3em;
-  height: 2em;
-}
-
-.input {
-  border-radius: 0 0.7em 0.7em 0.7em;
-  width: 10em;
 }

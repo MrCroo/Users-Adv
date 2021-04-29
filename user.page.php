@@ -10,10 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- bootstrap import -->
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-    crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
     />
     <!-- my styles import -->
     <link rel="stylesheet" href="style.css" />
@@ -22,15 +22,17 @@
   <body>
     <div class="listPage">
       <div>
-        <a class="btn btn-secondary button" href="index.php">Home</a>
+        <a class="btn btn-secondary" href="index.php">Home</a>
       </div>
       <div class="margin">
-        <form method="get">
+        <span>Name</span>
+        <form action="addUser.php" method="post">
           <div class="inputGroup">
-            <span>Name</span>
-            <input type="text" class="input" name="newUser"/>
+            <input type="text" class="input" name="newUser" />
           </div>
-          <button type="submit" class="btn addButton margin" name="addUser">Add User</button>
+          <button type="submit" class="btn addButton margin" name="submit">
+            Add User
+          </button>
         </form>
       </div>
       <h3>Users List</h3>
